@@ -1,0 +1,33 @@
+<html>
+<head><title></title>
+<script src="back.js">
+</script>
+</head>
+<body>
+<center><font color=red size=5>Link-State Routing</font></center>
+<hr>
+&nbsp;&nbsp;&nbsp;&nbsp;          Widely used today as OSPF in the Internet, replaced Distance Vector in the ARPANET. Link State improves the convergence of Distance Vector by having everybody share their idea of the state of the net with everybody else (more information is available to nodes, so better routing tables can be constructed). 
+<br><br>
+<b>Neighbor discovery </b><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;                  Send a HELLO packet out. Receiving routers respond with their addresses, which must be globally unique.<br><br>
+
+<b> Measure delay </b><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;                   Time the round-trip for an ECHO packet, divide by two. Question arises: do you include time spent waiting in the router (i.e. load factor of the router) when measuring round-trip ECHO packet time or not?<br><br>
+<b>Bundle your info </b><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;     Put information for all your neighbors together, along with your own id, a sequence number and an age.
+<br><br>
+<b>Distribute your info </b><br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;                  Ideally, every router would get every other routers data simultaneously. This can't happen, so in effect you have different parts of the subnet with different ideas of the topology of the net at the same time. Changes ripple through the system, but routers that are widely spread can be using very different routing tables at the same time. This could result in loops, unreachable hosts, other types of problems.
+<br><br>
+<b>Compute shortest path tree </b>
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;    Using an algorithm like Dijkstra's, and with a complete set of information packets from other routers, every router can locally compute a shortest path to every other router. 
+<br><br>
+<b>Advantages</b><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;  OSPF uses authentication for routing messages. This avoids the problem of misconfigured, "crazy" routers suddenly trying to tell the world that they are the center of the universe and are directly connected to a wormhole time travel machine. It also helps prevent malicious attacks on networks via their routing tables.OSPF uses the idea of "area" within a routing domain. This decreases the amount of state information, and exchange of routing messages  OSPF allows for load balancing among multiple routers.<br><br>
+<a href="routingsimulator.html">
+<img src="back.jpg" border=0 width=100 height=25>
+</a>
+</body>
+</html>

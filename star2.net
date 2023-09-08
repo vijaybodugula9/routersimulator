@@ -1,0 +1,22 @@
+#      name   xcoord   ycoord
+node    n0     0.3      0.1  
+node    n1     0.7      0.1  
+node    n2     1.0      0.3  
+node    n3     1.0      0.7  
+node    n4     0.7      1.0  
+node    n5     0.3      1.0  
+node    n6     0.1      0.7  
+node    n7     0.1      0.3
+node    n8     0.6      0.5
+#      name   node1   node2   speed   delay   cost (optional)
+link    l0     n8      n1     57600    0.01    1
+link    l1     n8      n2     57600    0.01    1
+link    l2     n8      n3     57600    0.01    1
+link    l3     n8      n4     57600    0.01    1
+link    l4     n8      n5     57600    0.01    1
+link    l5     n8      n6     57600    0.01    1
+link    l6     n8      n7     57600    0.01    1
+link    l7     n8      n0     57600    0.01    1
+#       time   command
+event    0.1    state l0 down
+event    0.3    state l0 up

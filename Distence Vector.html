@@ -1,0 +1,23 @@
+<html>
+<head><title></title>
+<script src="back.js">
+</script>
+</head>
+<body>
+<center><font color=red size=5>Distance Vector</font></center>
+<center>(Also known as Bellman-Ford or Ford-Fulkerson)</center>
+<hr>
+&nbsp;&nbsp;&nbsp;&nbsp;  The heart of this algorithm is the routing table maintained by each router. The table has an entry for every other router in the subnet, with two pieces of information: the link to take to get to the router, and the estimated distance from the router.  For a router A with two outgoing links L1, L2, and a total of four routers in the network, the routing table might look like this: 
+<center><pre>
+Router	Distance	link
+ B	   5	         L1
+ C	   7	         L1
+ D	   2	         L2
+</pre></centeR>
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;   Neighboring nodes in the subnet exchange their tables periodically to update each other on the state of the subnet (which makes this a dynamic algorithm).  If a neighbor claims to have a path to a node which is shorter than your path, you start using that neighbor as the route to that node.  Notice that you don't actually know the route the neighbor thinks is shorter - you trust his estimate and start sending packets that way. <br><br>
+<a href="routingsimulator.html">
+<img src="back.jpg" border=0 width=100 height=25>
+</a>
+</body>
+</html>

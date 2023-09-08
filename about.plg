@@ -1,0 +1,18 @@
+--------------------Configuration: about - Java Virtual Machine Debug--------------------
+Begining build with project "E:\Jdk1.3\bin\ashok\fresh\about.dsp", with item "about.java"
+Active configuration is Java Virtual Machine Java Project (based on Java Virtual Machine Java Project)
+
+
+Creating temp file "C:\DOCUME~1\ASHOKK~1\LOCALS~1\Temp\RSP4.tmp" with contents <E:\Jdk1.3\bin\ashok\fresh\about.java>
+Compiling...
+Microsoft (R) Visual J++ Compiler Version 1.01.7022
+Copyright (C) Microsoft Corp 1996. All rights reserved.
+
+E:\Jdk1.3\bin\ashok\fresh\about.java(2,8) : error J0051: Undefined package 'event'
+E:\Jdk1.3\bin\ashok\fresh\about.java(3,8) : error J0051: Undefined package 'swing'
+E:\Jdk1.3\bin\ashok\fresh\about.java(4,8) : error J0051: Undefined package 'event'
+Error executing jvc.exe.
+
+
+
+about.class - 3 error(s), 0 warning(s)

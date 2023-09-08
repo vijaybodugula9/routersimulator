@@ -1,0 +1,23 @@
+<html><head><title></title>
+<script src="back.js"></script>
+</head>
+<body>
+<center><font color=red size=5>RIP</font></center>
+<hr>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;                   The Routing Information Protocol (RIP) is a distance-vector protocol that uses hop count as its metric. RIP is widely used for routing traffic in the global Internet and is an interior gateway protocol (IGP), which means that it performs routing within a single autonomous system. Peer routers exchange distance vectors every 30 sec, and a router is declared dead if a peer does not hear from it from 180 sec.  The protocol uses split horizon with poisonous reverse to avoid the count-to infinity problem.<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;                   RIP sends routing-update messages at regular intervals and when the network topology changes. When a router receives a routing update that includes changes to an entry, it updates its routing table to reflect the new route. The metric value for the path is increased by one, and the sender is indicated as the next hop. RIP routers maintain only the best route (the route with the lowest metric value) to a destination. After updating its routing table, the router immediately begins transmitting routing updates to inform other network routers of the change. These updates are sent independently of the regularly scheduled updates that RIP routers send.<br><br>
+
+
+<b>RIP Stability Features</b>
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp; To adjust for rapid network-topology changes, RIP specifies a number of stability features that are common to many routing protocols.  RIP, for example, implements the split-horizon and hold-down mechanisms to prevent incorrect routing information from being propagated.  In addition, the RIP hop-count limit prevents routing loops from continuing indefinitely.
+<br><br>
+<b>Applications</b>
+<br><br>   
+&nbsp;&nbsp;&nbsp;&nbsp;  RIP is useful for small subnets where its simplicity of implementation and  configuration  more than compensates for its inadequacies in determining with link failures and providing Multiple metrics.<br><br>
+<a href="routingsimulator.html">
+ <img src="back.jpg" border=0 width=100 height=25>
+</a>
+ </body></html>

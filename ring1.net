@@ -1,0 +1,23 @@
+NODE    N0     0.3      0.0  
+NODE    N1     0.7      0.0  
+NODE    N2     1.0      0.3  
+NODE    N3     1.0      0.7  
+NODE    N4     0.7      1.0  
+NODE    N5     0.3      1.0  
+NODE    N6     0.0      0.7  
+NODE    N7     0.0      0.3
+NODE    N8      0.3      0.7
+LINK    L0     N0      N1     57344    0.01    1
+LINK    L1     N1      N2     57344    0.01    1
+LINK    L2     N2      N3     57344    0.01    1
+LINK    L3     N3      N4     57344    0.01    1
+LINK    L4     N4      N5     57344    0.01    1
+LINK    L5     N5      N6     57344    0.01    1
+LINK    L6     N6      N7     57344    0.01    1
+LINK    L7     N7      N0     57344    0.01    1
+LINK    L8     N4      N7     57344    0.01    1
+LINK    L9     N5      N0     57344    0.01    1
+LINK    L10    N3      N7     57344    0.01    1
+LINK    L11    N2      N4     57344    0.01    1
+LINK    L12    N8      N1      57344    0.01   1
+

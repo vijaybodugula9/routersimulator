@@ -1,0 +1,3 @@
+Name: javahelp.class
+Name: javahelp$mywindow.class
+Main-Class: javahelp

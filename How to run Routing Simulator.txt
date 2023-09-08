@@ -1,0 +1,18 @@
+careers @roysorg.com
+1) Double Click the .jar file which is in the project folder.
+   if there is any problem with that then go to command prompt and go to the project directory in the command prompt java -jar rsimulator.jar
+
+2)Simulator main screen will be displayed.In that screen in the right bottom select a topology name, than there will be a dialog box prompting the user to give the no of nodes.Give some positive integer and click ok in that dialog box then again come to topology box whih is on the right bottom click "Ok".
+
+3)I the left side screen you are able see a network topology diagram whcih you have selected.
+
+4)Then on the right top of the screen select some routing alogritham click "Simulate" button then for the hot-potato and flooding routing algorithams you are able to see a dialog with the "nexthop" information for each node.
+For other algorithms click the node image wich is in the network diagram.you are able to see "nexthop" information for that particular node.
+
+5)Then go for the efficiancy button on the right top of the screen in that dialog give the source,destination and via(for source routing) information then you are able see the efficiany information for that particular topology.
+
+6)Now you click the third button which is "send packets" button then a dialog will be displayed in that prepare some packets then click the "add" button then you click the "process" button.Now you come to each node in the network diagram right click on the node and select "Routing Buffer" tab then you are able to see the  Buffer of that perticular node.
+
+7)one moe option available in this routing simulator is you can ignore a node in the network and you can see the Ruting information for the neww network configuration for that you need to right click the node in the network and click "Down" tab that means you are eleminating the node for the network if you want to invoke the node again then you need do the samething that means right click on the node click the "Up" tab with this that perticular node is again in the network.
+
+8)If you want to see some notes about the application the click the "notes" menu item in the "help" menu.

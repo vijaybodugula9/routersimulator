@@ -1,0 +1,42 @@
+<html>
+<script src="back.js"></script>
+<head>
+<title>Flooding</title>
+
+</head>
+<body>
+<p align="center"><b><font size="5" color="#800000">Flooding</font></b></p>
+<hr>
+
+<p>
+nbsp; Every incoming packet is sent out on every other link by every 
+router. Super simple to implement, but generates lots of redundant packets. 
+Interesting to note that all routes are discovered, including the optimal one, 
+so this is robust and high performance (best path is found without being known 
+ahead of time).&nbsp; Good when topology changes frequently (USENET example). 
+<p> Some means of controlling the expansion of 
+packets is needed.&nbsp; Could try to ensure that each router only floods any given 
+packet once.&nbsp; Could try to be a little more selective about what is forwarded 
+and where. The station initiating a packet stores the distance of the 
+destination in the submitted packet (or the largest distance in the network).&nbsp; 
+Each node reduces the counter by one, and resubmits the packet to all the 
+adjacent nodes (but not to the node from where it received the packet). Packets 
+with counter 0 are discarded. The destination node doesn't resubmit the packet .</span></p>
+
+<center><img src="flooding_files/image002.jpg"><br><br><br>
+<img src="flooding_files/image005.jpg"><br><br><br>
+<img src="flooding_files/image009.jpg"><br><br><br>
+</center>
+<p>
+  <b>Advantages :</b><br>
+           <ul>
+           <li>Highly Robust
+           <li>Suitable for setting virtual circuits
+           <li>Useul for broad casting</ul><br>
+<p><b>Disadvantages  :</b><br>
+           <ul>
+           <li>High Trafic Load</ul>         
+<a href="routingsimulator.html"><img src="back.jpg" border=0 width=100 height=25></a>
+</body>
+
+</html>
