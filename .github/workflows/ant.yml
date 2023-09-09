@@ -24,6 +24,5 @@ jobs:
     - name: Build with Ant
       run: ant -noinput -buildfile build.xml
 
-    - name: First interaction
-      uses: actions/first-interaction@v1.1.1I
+    
             
